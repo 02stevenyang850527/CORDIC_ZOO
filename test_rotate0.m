@@ -10,8 +10,6 @@ z_log(1) = u;
 
 for niters = 1:(wrdLn - 1)
  v = myCordicRotate0(theta, u, niters);
- %v = EAR(theta, u, niters);
- %v = hybridCordic(theta, u, niters);
  x_err  = abs(real(v) - real(uTeTh));
  y_err  = abs(imag(v) - imag(uTeTh));
  xerr_log(niters) = x_err;
@@ -20,7 +18,6 @@ for niters = 1:(wrdLn - 1)
 end
 
 
-%plot_trace(z_log, uTeTh)
 figure()
 h = plot(1:wrdLn-1, xerr_log, 'r', 1:wrdLn-1, yerr_log, 'b');
 xlabel('# of iteration'); ylabel('Absolute Error'); grid on;
