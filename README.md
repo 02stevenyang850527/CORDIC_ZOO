@@ -30,7 +30,7 @@ n    : # of iteration
 v = myCordicVector0(u ,niters)
 ```
 
-2. Linear mode: v = imag(u) + real(u)*theta
+2. Linear mode: v = imag(u)/real(u)
 ```
 v = myCordicVector1(u ,niters)
 ```
