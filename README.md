@@ -37,7 +37,7 @@ v = myCordicVector0(u ,niters)
 v = myCordicVector1(u ,niters)
 ```
 
-3. Hyperbolic and Rotation mode: 
+3. Hyperbolic and Rotation mode: real(v) = (real(u)^2 - imag(u)^2)^0.5, imag(v) = arctanh(imag(u)/real(u))
 ```
 v = myCordicVector2(u ,niters)
 ```
